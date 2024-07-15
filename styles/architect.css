@@ -175,6 +175,26 @@ main > section{
     font-size: 1.1rem;
     margin-top: 10px;
 }
+.sponsors-container{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsors-title{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.sponsors-description{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.sponsors-companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.sponsors-companies img{
+    filter: grayscale(100%);
+}
 
 
 /* responsive media query */
@@ -185,13 +205,13 @@ main > section{
     .nav-links{
         padding: 0px;
     }
-    .image-container, .facts-card-container{
+    .image-container, .facts-card-container, .sponsors-companies{
         grid-template-columns: repeat(1, 1fr);
     }
     .facts-section{
         margin-left: 20px;
     }
-    .facts-card-container{
+    .facts-card-container, .sponsors-companies{
         justify-items: center;
         gap: 20px;
     }
